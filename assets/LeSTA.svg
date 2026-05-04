@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.00 75.00" width="78" height="75">
+<polygon points="4.00,49.50 39.00,67.00 39.00,71.00 4.00,53.50" fill="#2A1A4E" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="74.00,49.50 39.00,67.00 39.00,71.00 74.00,53.50" fill="#1E1238" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,32.00 74.00,49.50 39.00,67.00 4.00,49.50" fill="#3D2A6A" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<line x1="39.00" y1="31.60" x2="74.00" y2="49.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="39.00" y1="31.60" x2="4.00" y2="49.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="32.00" y1="35.10" x2="67.00" y2="52.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="46.00" y1="35.10" x2="11.00" y2="52.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="25.00" y1="38.60" x2="60.00" y2="56.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="53.00" y1="38.60" x2="18.00" y2="56.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="18.00" y1="42.10" x2="53.00" y2="59.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="60.00" y1="42.10" x2="25.00" y2="59.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="11.00" y1="45.60" x2="46.00" y2="63.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="67.00" y1="45.60" x2="32.00" y2="63.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="4.00" y1="49.10" x2="39.00" y2="66.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="74.00" y1="49.10" x2="39.00" y2="66.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<polygon points="4.00,35.50 39.00,53.00 39.00,57.00 4.00,39.50" fill="#4E2878" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="74.00,35.50 39.00,53.00 39.00,57.00 74.00,39.50" fill="#3A1A60" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,18.00 74.00,35.50 39.00,53.00 4.00,35.50" fill="#6A3A9E" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<line x1="39.00" y1="17.60" x2="74.00" y2="35.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="39.00" y1="17.60" x2="4.00" y2="35.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="32.00" y1="21.10" x2="67.00" y2="38.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="46.00" y1="21.10" x2="11.00" y2="38.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="25.00" y1="24.60" x2="60.00" y2="42.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="53.00" y1="24.60" x2="18.00" y2="42.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="18.00" y1="28.10" x2="53.00" y2="45.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="60.00" y1="28.10" x2="25.00" y2="45.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="11.00" y1="31.60" x2="46.00" y2="49.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="67.00" y1="31.60" x2="32.00" y2="49.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="4.00" y1="35.10" x2="39.00" y2="52.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="74.00" y1="35.10" x2="39.00" y2="52.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<polygon points="4.00,21.50 39.00,39.00 39.00,43.00 4.00,25.50" fill="#7A38A0" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="74.00,21.50 39.00,39.00 39.00,43.00 74.00,25.50" fill="#5C2880" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,4.00 74.00,21.50 39.00,39.00 4.00,21.50" fill="#9B50C8" stroke="rgba(0,0,0,0.10)" stroke-width="0.35" stroke-linejoin="round"/>
+<line x1="39.00" y1="3.60" x2="74.00" y2="21.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="39.00" y1="3.60" x2="4.00" y2="21.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="32.00" y1="7.10" x2="67.00" y2="24.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="46.00" y1="7.10" x2="11.00" y2="24.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="25.00" y1="10.60" x2="60.00" y2="28.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="53.00" y1="10.60" x2="18.00" y2="28.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="18.00" y1="14.10" x2="53.00" y2="31.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="60.00" y1="14.10" x2="25.00" y2="31.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="11.00" y1="17.60" x2="46.00" y2="35.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="67.00" y1="17.60" x2="32.00" y2="35.10" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="4.00" y1="21.10" x2="39.00" y2="38.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<line x1="74.00" y1="21.10" x2="39.00" y2="38.60" stroke="rgba(255,255,255,0.18)" stroke-width="0.3"/>
+<polygon points="53.00,10.50 60.00,14.00 53.00,17.50 46.00,14.00" fill="rgba(77,200,122,0.72)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,10.50 46.00,14.00 39.00,17.50 32.00,14.00" fill="rgba(77,200,122,0.77)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="46.00,14.00 53.00,17.50 46.00,21.00 39.00,17.50" fill="rgba(77,200,122,0.81)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,17.50 46.00,21.00 39.00,24.50 32.00,21.00" fill="rgba(77,200,122,0.86)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="46.00,21.00 53.00,24.50 46.00,28.00 39.00,24.50" fill="rgba(77,200,122,0.91)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="39.00,24.50 46.00,28.00 39.00,31.50 32.00,28.00" fill="rgba(77,200,122,0.95)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+<polygon points="32.00,28.00 39.00,31.50 32.00,35.00 25.00,31.50" fill="rgba(77,200,122,1.00)" stroke="rgba(255,255,255,0.30)" stroke-width="0.35" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite our paper."
+title: LeSTA
+type: software
+authors:
+  - family-names: Cho
+    given-names: Ikhyeon
+    orcid: "https://orcid.org/0000-0002-9947-493X"
+    email: tre0430@korea.ac.kr
+    affiliation: Korea University
+  - family-names: Chung
+    given-names: Woojin
+    affiliation: Korea University
+license: Apache-2.0
+repository-code: "https://github.com/Ikhyeon-Cho/LeSTA"
+url: "https://github.com/Ikhyeon-Cho/LeSTA"
+preferred-citation:
+  type: article
+  title: "Learning Self-Supervised Traversability With Navigation Experiences of Mobile Robots: A Risk-Aware Self-Training Approach"
+  authors:
+    - family-names: Cho
+      given-names: Ikhyeon
+      orcid: "https://orcid.org/0000-0002-9947-493X"
+      affiliation: Korea University
+    - family-names: Chung
+      given-names: Woojin
+      affiliation: Korea University
+  journal: "IEEE Robotics and Automation Letters"
+  year: 2024
+  volume: 9
+  issue: 5
+  start: 4122
+  end: 4129
+  doi: "10.1109/LRA.2024.3376148"
+  publisher:
+    name: IEEE

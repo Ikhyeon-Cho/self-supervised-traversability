@@ -1,56 +1,47 @@
 <div align="center">
-    <!-- Title -->
-    <h1>LeSTA</h1>
-    <h3>Learning Self-supervised Traversability with Navigation Experiences of Mobile Robots</h3>
-    <a href="https://github.com/Ikhyeon-Cho/LeSTA"><img src="https://img.shields.io/badge/C++-LibTorch-EE4C2C?logo=cplusplus" /></a>
-    <a href="https://github.com/Ikhyeon-Cho/LeSTA"><img src="https://img.shields.io/badge/ROS1-Noetic-22314E?logo=ros" /></a>
-    <a href="https://github.com/Ikhyeon-Cho/LeSTA"><img src="https://img.shields.io/badge/PyTorch-555555?logo=pytorch" /></a>
-    <a href="https://ieeexplore.ieee.org/document/10468651"><img src="https://img.shields.io/badge/IEEE-RA--L-00629B?logo=ieee" /></a>
-    <a href="https://ras.papercept.net/conferences/conferences/ICRAX24/program/ICRAX24_ContentListWeb_4.html#WeAT5.3"><img src="https://img.shields.io/badge/IEEE-ICRA@40-00629B?logo=ieee" /></a>
+  <h1>
+    <img src="assets/LeSTA.svg" align="center" height="46" alt="">
+    LeSTA
+  </h1>
 </div>
 
-<div align="center">
-    <br>
-    <p>
-        🛠️ <a href="#lesta_ros">Installation</a> | 
-        🎥 <a href="">Video</a> | 
-        📖 <a href="https://ieeexplore.ieee.org/document/10468651">Paper</a> | 
-        📁 <a href="#sample-datasets">Dataset</a>
-    </p>
-    <br>
-    <p align='center'>
-        <img src="assets/figure1.png" alt="demo" width="375"/>
-        <img src="assets/Traversability Prediction.gif" alt="demo" width="400" height="250"/>
-    </p>
+<p align="center">
+  <i><b>Learn robot-specific traversability</b> from a short manual drive — <b>no labels needed</b></i>
+</p>
 
-**LeSTA directly learns robot-specific traversability in a self-supervised manner** by using a short period of manual driving experience.
-</div>
+<p align="center">
+  <a href="https://ieeexplore.ieee.org/document/10468651">RA-L</a> ·
+  <a href="#installation">ROS1</a> ·
+  <a href="#installation">ROS2</a> ·
+  <a href="#dataset">Dataset</a>
+</p>
 
-[paperlink]:https://ieeexplore.ieee.org/document/10468651
-[projectlink]:https://github.com/Ikhyeon-Cho/LeSTA
-[datasetlink]:https://github.com/Ikhyeon-Cho/urban-traversability-dataset
+<p align="center">
+  <img src="assets/figure1.png" width="44%" alt="LeSTA self-supervised traversability learning overview" />
+  <img src="assets/Traversability Prediction.gif" width="52%" alt="LeSTA real-time traversability prediction" />
+</p>
 
+**LeSTA is a self-supervised framework** that learns navigational capability of mobile robots.
+By leveraging a short period of manual driving, it provides an end-to-end pipeline from label generation to real-time traversability prediction and mapping.
 
-## :loudspeaker: News & Updates
-
+**🎉 News & Updates:**
 - **2024.07.30**: Our paper is accepted for presentation at **IEEE ICRA@40** in Rotterdam, Netherlands
-- **2024.02.29**: Our paper is accepted by **IEEE Robotics and Automation Letters** ([IEEE RA-L](https://ieeexplore.ieee.org/document/10468651))
-- **2024.02.19**: We release the [urban-traversability-dataset](https://github.com/Ikhyeon-Cho/urban-traversability-dataset) for learning terrain traversability in urban environments
+- **2024.02.29**: Our paper is accepted by **IEEE Robotics and Automation Letters** (**RA-L**)
+- **2024.02.19**: Release **public dataset** for learning terrain traversability in urban environments
 
+**🧩 Related projects:**
+- **[FastDEM](https://github.com/Ikhyeon-Cho/FastDEM)** — Ultra-fast elevation mapping on embedded robots
+- **EviGround** — (in preparation)
 
-## :rocket: What's in this repo
-- **C++ package for LeSTA** with ROS interface ([lesta_ros](https://github.com/Ikhyeon-Cho/LeSTA/tree/master/lesta_ros/))
-  - Traversability label generation from LiDAR-reconstructed height map
-  - Traversability inference/mapping using a learned network
+---
 
-- **PyTorch scripts** for training LeSTA model ([pylesta](https://github.com/Ikhyeon-Cho/LeSTA/tree/master/lesta_training/))
-
-
-## :hammer_and_wrench: Installation
+## Installation
 
 Our project is built on [ROS](https://www.ros.org/), successfully tested on the following setup.
 - Ubuntu 20.04 / ROS Noetic
 - PyTorch 2.2.2 / LibTorch 2.6.0
+
+> **ROS2 support is coming soon.**
 
 ### lesta_ros
 
@@ -87,7 +78,7 @@ Our project is built on [ROS](https://www.ros.org/), successfully tested on the 
    source devel/setup.bash
    ```
 
-:bulb: **Notes:**
+**Notes:**
 - We recommend starting without GPU processing. The network effectively runs on a single CPU core.
 - If you are interested in height map reconstruction, see [height_mapping](https://github.com/Ikhyeon-Cho/height_mapping) for more details.
 
@@ -146,25 +137,16 @@ Our project is built on [ROS](https://www.ros.org/), successfully tested on the 
    pip install -e pylesta
    ```
 
-> :whale: If you are familiar with Docker, see [here](#using-docker) for easier CUDA environment setup.
+### Using Docker
+To be updated...
 
-## :rocket: Run the package
-You have two options:
-   1. **Train the traversability model with your own robot** from scratch
-   2. **Use pre-trained model** to predict traversability
-   > ⚠️ **Note:** 
-   > **For optimal performance, we highly recommend training the model with your own robot's data.** The robot's unique sensor setup and motion dynamics are crucial for accurate traversability predictions, yet the configuration of our robot might differ from yours. For details on our settings, visit [urban-traversability-dataset](https://github.com/Ikhyeon-Cho/urban-traversability-dataset) repo.
+---
 
-<br>
+## Usage
 
-The entire training-to-deployment pipeline consists of three steps:
-1. **Label Generation**: Generate the traversability label from the dataset.
-2. **Model Training**: Train the traversability model with the generated labels.
-3. **Traversability Estimation**: Prediction/mapping of the terrain traversability with your own robot.
+The pipeline consists of three steps: **label generation → model training → traversability estimation**.
 
-> For rapid testing of the project, you can use checkpoints in [#model-zoo](#model-zoo) and directly go to [#traversability-estimation](#3-traversability-estimation).
-
-<br>
+> **Note:** We highly recommend training with your own robot's data. The robot's unique sensor setup and motion dynamics are crucial for accurate traversability predictions. For rapid testing, use checkpoints from [#Model Zoo](#model-zoo) and skip to [Step 3](#3-traversability-estimation).
 
 ### 1. Label Generation
 #### Launch ROS node
@@ -172,7 +154,7 @@ The entire training-to-deployment pipeline consists of three steps:
 roslaunch lesta label_generation.launch
 ```
 #### Generate labels with rosbag
-> **Note:** See [#sample datasets](#sample-datasets) for example rosbag files.
+> **Note:** See [#dataset](#dataset) for example rosbag files.
 ```bash
 rosbag play {your-rosbag}.bag --clock -r 3
 ```
@@ -201,7 +183,7 @@ python pylesta/tools/train.py --dataset "training_set.pcd"
 Configure `model_path` variable in `lesta_ros/config/*_node.yaml` with your model checkpoint.
 - **trav_prediction_node.yaml**
 - **trav_mapping_node.yaml**
-> **Note:** See [#model-zoo](#sample-datasets) for our pre-trained checkpoints.
+> **Note:** See [#model-zoo](#model-zoo) for our pre-trained checkpoints.
 
 #### Launch ROS node
 We provide two options for traversability estimation:
@@ -252,15 +234,21 @@ We provide two options for traversability estimation:
 rosbag play {your-rosbag}.bag --clock -r 2
 ```
 
-## Sample datasets
+---
 
-- Download rosbag files to test the package. The datasets below are configured to run with the default settings:
+## Dataset
 
-  - **Campus road Dataset** [[Google Drive](https://drive.google.com/drive/folders/1C_jPeGpr_7867v7znTjca3hy4acE0uBJ?usp=drive_link)]
+We release the public dataset used in our paper:
 
-  - **Parking lot Dataset** [[Google Drive](https://drive.google.com/drive/folders/1C_jPeGpr_7867v7znTjca3hy4acE0uBJ?usp=drive_link)]
+- **[urban-traversability-dataset](https://github.com/Ikhyeon-Cho/urban-traversability-dataset)** — labeled height maps for traversability learning in urban environments
 
-> See [urban-traversability-dataset](https://github.com/Ikhyeon-Cho/urban-traversability-dataset) repository for more data samples.
+### Quick test
+
+Sample rosbags configured to run with the default settings:
+
+  - **Campus road** [[Google Drive](https://drive.google.com/drive/folders/1C_jPeGpr_7867v7znTjca3hy4acE0uBJ?usp=drive_link)]
+
+  - **Parking lot** [[Google Drive](https://drive.google.com/drive/folders/1C_jPeGpr_7867v7znTjca3hy4acE0uBJ?usp=drive_link)]
 
 ## Model Zoo
 
@@ -308,10 +296,9 @@ rosbag play {your-rosbag}.bag --clock -r 2
   </tr>
 </table>
 
-## Using Docker
-To be updated...
+---
 
-## Issues
+## Known Issues
 - **Artifacts from dynamic objects**:
   - We currently implemented a raycasting-based approach to remove artifacts from dynamic objects.
   - This is crucial for accurate static terrain representation, which directly impacts prediction quality.
@@ -326,7 +313,9 @@ To be updated...
   - We are working on improving the height mapping accuracy.
 
 
-## 📝 Citation
+---
+
+## Citation
 
 Thank you for citing [our paper](https://ieeexplore.ieee.org/document/10468651) if this helps your research project:
 
@@ -345,7 +334,7 @@ Thank you for citing [our paper](https://ieeexplore.ieee.org/document/10468651) 
 }
 ```
 
-You can also check [the paper](https://ieeexplore.ieee.org/document/9561394) of our baseline:
+You can also check the paper of our [baseline](https://ieeexplore.ieee.org/document/9561394):
 
 > Hyunsuk Lee, and Woojin Chung. **'A Self-Training Approach-Based Traversability Analysis for Mobile Robots in Urban Environments'**, *IEEE International Conference on Robotics and Automation (ICRA), 2021*.
 
@@ -360,11 +349,12 @@ You can also check [the paper](https://ieeexplore.ieee.org/document/9561394) of 
 }
 ```
 
-## License
+---
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+<div align="center">
 
-## Contact
+**Contact:** [tre0430@korea.ac.kr](mailto:tre0430@korea.ac.kr)
 
-For any questions or feedback, feel free to contact us! or publish an issue on [GitHub](https://github.com/Ikhyeon-Cho/LeSTA/issues).
-- [Ikhyeon Cho](https://github.com/Ikhyeon-Cho) :   tre0430`at`korea.ac.kr
+Apache-2.0 License © [Ikhyeon Cho](mailto:ikhyeon.c@gmail.com)
+
+</div>
