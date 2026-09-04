@@ -31,7 +31,7 @@ By leveraging a short period of manual driving, it provides an end-to-end pipeli
 
 **🧩 Related projects:**
 - **[FastDEM](https://github.com/Ikhyeon-Cho/FastDEM)** — Ultra-fast elevation mapping on embedded robots
-- **EviGround** — (in preparation)
+- **Terrablox** — (in preparation)
 
 ---
 
